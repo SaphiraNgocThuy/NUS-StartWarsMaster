@@ -1,1 +1,8 @@
-<p>items works!</p>
+<h1>All Items</h1>
+<ul *ngIf="categories">
+    <li *ngFor="let category of categories">
+        <!-- <p>{{category}}a</p> -->
+        <button class="btn-primary">{{category}}</button>
+        
+    </li>
+</ul>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 $primary: rgb(111, 0, 255);
 
@@ -39,7 +40,12 @@ header {
                 &:hover {
                     background: darken($primary, 10%);
                 }
+                // list-style: none
             }
+
+            // li {
+            //     list-style: none
+            // }
         }
     }
 }

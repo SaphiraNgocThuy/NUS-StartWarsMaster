@@ -11,4 +11,8 @@ export class HttpService {
   getCategories() {
     return this.http.get('https://swapi.co/api/')
   }
+
+  getItems() {
+    return this.http.get('');
+  }
 }
