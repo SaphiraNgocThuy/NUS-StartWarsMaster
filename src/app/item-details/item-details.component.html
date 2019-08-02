@@ -1,1 +1,9 @@
-<p>item-details works!</p>
+<table>
+    <tr>
+        <td [colspan]=2><img src={{imgURL}}></td>
+    </tr>
+    <tr *ngFor='let item of details'>
+        <td>{{item.key}}</td>
+        <td>{{item.value}}</td>
+    </tr>
+</table>
