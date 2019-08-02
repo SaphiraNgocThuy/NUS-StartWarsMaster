@@ -1,8 +1,18 @@
-<h1>All Items</h1>
-<ul *ngIf="categories">
-    <li *ngFor="let category of categories">
-        <!-- <p>{{category}}a</p> -->
-        <button class="btn-primary">{{category}}</button>
-        
+<div *ngIf="!details">
+  <h1>All {{ category }}</h1>
+  <ul *ngIf="items">
+    <li *ngFor="let item of items; let i = index">
+      <!-- <p>{{category}}a</p> -->
+      <button class="btn-primary" (click)="onClick(item, i)">
+        {{ item.name }}
+      </button>
     </li>
-</ul>
+  </ul>
+</div>
+<div *ngIf="details">
+  <h1>{{ details.name }}</h1>
+  <img src="{{ imgUrl }}" />
+  <div *ngFor="let detail of detailList">
+    <p>{{ detail.key }}: {{ detail.value }}</p>
+  </div>
+</div>

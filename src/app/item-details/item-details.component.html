@@ -1,9 +1,20 @@
 <table>
-    <tr>
+  <!-- <tr>
         <td [colspan]=2><img src={{imgURL}}></td>
-    </tr>
-    <tr *ngFor='let item of details'>
-        <td>{{item.key}}</td>
-        <td>{{item.value}}</td>
-    </tr>
+    </tr> -->
+  <p>test2</p>
+  <tr *ngFor="let item of details">
+    <td>{{ item.key }}</td>
+    <td>{{ item.value }}</td>
+    <td>test detail</td>
+  </tr>
+  <p>test</p>
 </table>
+
+<h1>All</h1>
+<ul>
+  <li *ngFor="let item of details">
+    <!-- <p>{{category}}a</p> -->
+    <button class="btn-primary">{{ item.key }}</button>
+  </li>
+</ul>
